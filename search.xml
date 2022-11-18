@@ -32,17 +32,6 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- GitCalendar容器 --><div id="gitZone"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -54,11 +43,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(5) .menus_item_child {  left: -38px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- GitCalendar容器 --><div id="gitZone"></div>]]></content>
       
     </entry>
     
@@ -92,28 +81,6 @@
       <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/17/2022 21:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/17/2022 21:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/r小屋-摸鱼中-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 ——— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/r小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 ——— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
