@@ -8,7 +8,7 @@
       <link href="/2022/11/20/%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/"/>
       <url>/2022/11/20/%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
       
-        <content type="html"><![CDATA[<h1 id="为什么需要一个图床"><a href="#为什么需要一个图床" class="headerlink" title="为什么需要一个图床"></a>为什么需要一个图床</h1><p>我们博客有很多图片，如果将图片存放到服务器里，会降低我们网站的加载速度，而存放到图床里，用外链引入图片则会降低服务器的存储压力，节省流量。</p><p>如果要用图床就要考虑图床的安全性和稳定性，我比较推荐用腾讯云COS来做图床</p><h1 id="腾讯云COS"><a href="#腾讯云COS" class="headerlink" title="腾讯云COS"></a>腾讯云COS</h1><p>对象存储（Cloud Object Storage，COS）是腾讯云提供的一种存储海量文件的分布式存储服务，具有高扩展性、低成本、可靠安全等优点。通过控制台、API、SDK 和工具等多样化方式，用户可简单、快速地接入 COS，进行多格式文件的上传、下载和管理，实现海量数据存储和管理。</p><h3 id="创建存储桶"><a href="#创建存储桶" class="headerlink" title="创建存储桶"></a>创建存储桶</h3><p>注册一个腾讯云账号，打开控制台，点击对象存储：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.02.59.16.png"></p><p>点击创建存储桶：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.03.10.79.png"></p><p>再按照如图配置添加，名称随意，地域选择离你比较近的地方，选择公有读私有写。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.04.29.30.png"></p><p>然后一直默认下一步就好了，点击创建：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.04.39.05.png"></p><p>腾讯云给新用户6个月的COS标准存储包，具体收费请看这个文档 <a href="https://cloud.tencent.com/document/product/436/36522">https://cloud.tencent.com/document/product/436/36522</a></p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2013.44.03.08.png"></p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2013.43.49.81.png"></p><h3 id="添加密钥"><a href="#添加密钥" class="headerlink" title="添加密钥"></a>添加密钥</h3><p>找到密钥：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.05.35.63.png"></p><p>添加一个密钥，由于我这个添加过了，就不在此展示了。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.05.35.63.png"></p><h3 id="防盗链"><a href="#防盗链" class="headerlink" title="防盗链"></a>防盗链</h3><p>还有一个比较重要的，就是防盗链，开启之后别人就不能盗用你的图片链接了，如果用于个人博客，开不开无所谓，毕竟也没人盗你的图片链接。要是介意的话就开启，但是开启之后PicGo就不能上传图片了，建议写文章的时候关闭，其他时间开启即可。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2014.15.46.87.png"></p><h1 id="PicGo配置"><a href="#PicGo配置" class="headerlink" title="PicGo配置"></a>PicGo配置</h1><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>PicGo是一个开源的，用于快速上传图片并获取图片 URL 链接的工具，使用较方便。也可以使用腾讯的cosbrowser。我是比较喜欢用PicGo,它可以将图片直接显示出来，生成其他链接也很方便。PicGo下载链接 <a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1">https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1</a> 点击这个下载：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.08.46.41.png"></p><p>因为是在GitHub上，国内访问较慢，可以开代理。如果没有代理，可以访问山东大学镜像站 <a href="https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/">https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/</a> 进行下载</p><h3 id="连接密钥"><a href="#连接密钥" class="headerlink" title="连接密钥"></a>连接密钥</h3><p>之后找到图床设置，选择腾讯云COS,填入各种信息，后面三个可以选择不填：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.10.27.36.png"></p><p>然后就可以上传图片到你的腾讯云COS了，复制链接很方便：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.11.06.10.png"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="为什么需要一个图床"><a href="#为什么需要一个图床" class="headerlink" title="为什么需要一个图床"></a>为什么需要一个图床</h1><p>我们博客有很多图片，如果将图片存放到服务器里，会降低我们网站的加载速度，而存放到图床里，用外链引入图片则会降低服务器的存储压力，节省流量。</p><p>如果要用图床就要考虑图床的安全性和稳定性，我比较推荐用腾讯云COS来做图床</p><h1 id="腾讯云COS"><a href="#腾讯云COS" class="headerlink" title="腾讯云COS"></a>腾讯云COS</h1><p>对象存储（Cloud Object Storage，COS）是腾讯云提供的一种存储海量文件的分布式存储服务，具有高扩展性、低成本、可靠安全等优点。通过控制台、API、SDK 和工具等多样化方式，用户可简单、快速地接入 COS，进行多格式文件的上传、下载和管理，实现海量数据存储和管理。</p><h3 id="创建存储桶"><a href="#创建存储桶" class="headerlink" title="创建存储桶"></a>创建存储桶</h3><p>注册一个腾讯云账号，打开控制台，点击对象存储：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.02.59.16.png"></p><p>点击创建存储桶：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.03.10.79.png"></p><p>再按照如图配置添加，名称随意，地域选择离你比较近的地方，选择公有读私有写。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.04.29.30.png"></p><p>然后一直默认下一步就好了，点击创建：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.04.39.05.png"></p><p>腾讯云给新用户6个月的COS标准存储包，具体收费请看这个文档 <a href="https://cloud.tencent.com/document/product/436/36522">https://cloud.tencent.com/document/product/436/36522</a></p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2013.44.03.08.png"></p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2013.43.49.81.png"></p><h3 id="添加密钥"><a href="#添加密钥" class="headerlink" title="添加密钥"></a>添加密钥</h3><p>找到密钥：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.05.35.63.png"></p><p>添加一个密钥，由于我这个添加过了，就不在此展示了。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.05.35.63.png"></p><h3 id="防盗链"><a href="#防盗链" class="headerlink" title="防盗链"></a>防盗链</h3><p>还有一个比较重要的，就是防盗链，开启之后别人就不能盗用你的图片链接了，开启之后PicGo就不能上传图片了，建议写文章的时候关闭，其他时间开启即可。</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2014.15.46.87.png"></p><h1 id="PicGo配置"><a href="#PicGo配置" class="headerlink" title="PicGo配置"></a>PicGo配置</h1><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>PicGo是一个开源的，用于快速上传图片并获取图片 URL 链接的工具，使用较方便。也可以使用腾讯的cosbrowser。我是比较喜欢用PicGo,它可以将图片直接显示出来，生成其他链接也很方便。PicGo下载链接 <a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1">https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1</a> 点击这个下载：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.08.46.41.png"></p><p>因为是在GitHub上，国内访问较慢，可以开代理。如果没有代理，可以访问山东大学镜像站 <a href="https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/">https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/</a> 进行下载</p><h3 id="连接密钥"><a href="#连接密钥" class="headerlink" title="连接密钥"></a>连接密钥</h3><p>之后找到图床设置，选择腾讯云COS,填入各种信息，后面三个可以选择不填：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.10.27.36.png"></p><p>然后就可以上传图片到你的腾讯云COS了，复制链接很方便：</p><p><img src="https://image-1315090279.cos.ap-beijing.myqcloud.com/Desktop%20Screenshot%202022.11.20%20-%2012.11.06.10.png"></p>]]></content>
       
       
       <categories>
@@ -80,17 +80,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 白天模式遮罩透明 */ #footer::before {    background: transparent !important;  } #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/light.js"/>
       <url>/js/light.js</url>
       
@@ -102,21 +91,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/shubiao.css"/>
-      <url>/css/shubiao.css</url>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
       
-        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -135,21 +113,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/17/2022 21:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/17/2022 21:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/r小屋-摸鱼中-6adea8?style=social&logo=cakephp' title='欢迎来到我的博客'><span class='textTip'> <br> <b>本站运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>多数的错失，是因为不坚持，不努力，不挽留，然后催眠自己说一切都是命运</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/r小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='欢迎来到我的博客'><span class='textTip'> <br> <b>本站运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>多数的错失，是因为不坚持，不努力，不挽留，然后催眠自己说一切都是命运</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
+        <content type="html"><![CDATA[  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 白天模式遮罩透明 */ #footer::before {    background: transparent !important;  } #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title></title>
+      <link href="/css/shubiao.css"/>
+      <url>/css/shubiao.css</url>
       
-        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
+        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
       
     </entry>
     
@@ -167,11 +145,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
+      
+        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/17/2022 21:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/17/2022 21:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/r小屋-摸鱼中-6adea8?style=social&logo=cakephp' title='欢迎来到我的博客'><span class='textTip'> <br> <b>本站运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>多数的错失，是因为不坚持，不努力，不挽留，然后催眠自己说一切都是命运</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/r小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='欢迎来到我的博客'><span class='textTip'> <br> <b>本站运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>多数的错失，是因为不坚持，不努力，不挽留，然后催眠自己说一切都是命运</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
@@ -189,11 +178,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
       
     </entry>
     
