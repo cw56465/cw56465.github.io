@@ -8,7 +8,7 @@
       <link href="/post/c508814c.html"/>
       <url>/post/c508814c.html</url>
       
-        <content type="html"><![CDATA[<h1 id="房主需要的操作"><a href="#房主需要的操作" class="headerlink" title="房主需要的操作"></a>房主需要的操作</h1><h3 id="注册下载Sakura-Frp"><a href="#注册下载Sakura-Frp" class="headerlink" title="注册下载Sakura Frp"></a>注册下载Sakura Frp</h3><p>首先打开一个这样的网站:<a href="https://www.natfrp.com/">https://www.natfrp.com/</a></p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.44.01.96.webp"></p><p>注册啥的应该很简单，注册完了登录找到软件下载：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.44.29.43.webp"></p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.44.35.91.webp"></p><p>然后进行实名认证：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.44.45.61.webp"></p><h3 id="获取登录密钥登陆账号"><a href="#获取登录密钥登陆账号" class="headerlink" title="获取登录密钥登陆账号"></a>获取登录密钥登陆账号</h3><p>你可以签到获得流量，如果不开大型服务器的话，自己和朋友玩绝对够用。实名认证完了之后需要获取登录密钥：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.44.57.49.webp"></p><p>在刚才下载的软件上输入你的登录密钥，登录你的账号：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.45.44.03.webp"></p><h3 id="打开存档，创建内网穿透隧道"><a href="#打开存档，创建内网穿透隧道" class="headerlink" title="打开存档，创建内网穿透隧道"></a>打开存档，创建内网穿透隧道</h3><p>然后下载HMCL：<a href="https://hmcl.huangyuhui.net/">https://hmcl.huangyuhui.net/</a> 。HMCL是一个启动器，比官方启动器好用，加Forge,OptiFine啥的比较方便，关键是还可以离线登录(也就是说不用买账号，但是有能力还是要支持正版)，然后安装Windows版本的，打开：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.46.01.82.webp"></p><p>随意安装一个版本打开，找到你要开房间的存档，打开对局域网开放，开启作弊，创建。左下角会出现一个端口号，从刚下载的那个SakuraFrp启动器里新建一个通道，找到那个端口号，随便选择一个穿透节点，创建：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.47.39.49.webp"></p><p>打开日志，把这里选中发给你联机的朋友：</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.47.59.35.webp"></p><p>现在，房主的任务就完成啦！</p><hr><h1 id="进房间的朋友"><a href="#进房间的朋友" class="headerlink" title="进房间的朋友"></a>进房间的朋友</h1><p>你的任务很简单，只需要打开游戏，找到多人游戏，直接连接，输入房主发给你的地址，连接就行了</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Base%20Profile%20Screenshot%202022.11.19%20-%2018.48.23.42.png"></p><h1 id="注意！！！"><a href="#注意！！！" class="headerlink" title="注意！！！"></a>注意！！！</h1><p>如果你没有正版账号，你需要在离线模式添加一个皮肤，不然的话输入地址后会显示无效会话！</p><p><img src="https://raw.githubusercontent.com/cw56465/blog-imgs/main/Desktop%20Screenshot%202022.11.19%20-%2018.56.38.80.webp"></p><p>你如果不知道哪里可以下载皮肤，可以去mcbbs上下载 <a href="https://www.mcbbs.net/">https://www.mcbbs.net/</a></p><p>正版账号和离线模式的区别就是离线模式进不了有正版验证的服务器，有能力就支持正版，毕竟这个游戏给我们带来了很多欢乐！</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="房主需要的操作"><a href="#房主需要的操作" class="headerlink" title="房主需要的操作"></a>房主需要的操作</h1><h3 id="注册下载Sakura-Frp"><a href="#注册下载Sakura-Frp" class="headerlink" title="注册下载Sakura Frp"></a>注册下载Sakura Frp</h3><p>首先打开一个这样的网站:<a href="https://www.natfrp.com/">https://www.natfrp.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.44.01.96.webp"></p><p>注册啥的应该很简单，注册完了登录找到软件下载：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.44.29.43.webp"></p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.44.35.91.webp"></p><p>然后进行实名认证：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.44.45.61.webp"></p><h3 id="获取登录密钥登陆账号"><a href="#获取登录密钥登陆账号" class="headerlink" title="获取登录密钥登陆账号"></a>获取登录密钥登陆账号</h3><p>你可以签到获得流量，如果不开大型服务器的话，自己和朋友玩绝对够用。实名认证完了之后需要获取登录密钥：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.44.57.49.webp"></p><p>在刚才下载的软件上输入你的登录密钥，登录你的账号：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.45.44.03.webp"></p><h3 id="打开存档，创建内网穿透隧道"><a href="#打开存档，创建内网穿透隧道" class="headerlink" title="打开存档，创建内网穿透隧道"></a>打开存档，创建内网穿透隧道</h3><p>然后下载HMCL：<a href="https://hmcl.huangyuhui.net/">https://hmcl.huangyuhui.net/</a> 。HMCL是一个启动器，比官方启动器好用，加Forge,OptiFine啥的比较方便，关键是还可以离线登录(也就是说不用买账号，但是有能力还是要支持正版)，然后安装Windows版本的，打开：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.46.01.82.webp"></p><p>随意安装一个版本打开，找到你要开房间的存档，打开对局域网开放，开启作弊，创建。左下角会出现一个端口号，从刚下载的那个SakuraFrp启动器里新建一个通道，找到那个端口号，随便选择一个穿透节点，创建：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.47.39.49.webp"></p><p>打开日志，把这里选中发给你联机的朋友：</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.47.59.35.webp"></p><p>现在，房主的任务就完成啦！</p><hr><h1 id="进房间的朋友"><a href="#进房间的朋友" class="headerlink" title="进房间的朋友"></a>进房间的朋友</h1><p>你的任务很简单，只需要打开游戏，找到多人游戏，直接连接，输入房主发给你的地址，连接就行了</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Base%20Profile%20Screenshot%202022.11.19%20-%2018.48.23.42.webp"></p><h1 id="注意！！！"><a href="#注意！！！" class="headerlink" title="注意！！！"></a>注意！！！</h1><p>如果你没有正版账号，你需要在离线模式添加一个皮肤，不然的话输入地址后会显示无效会话！</p><p><img src="https://cdn.jsdelivr.net/gh/cw56465/blog-imgs/Desktop%20Screenshot%202022.11.19%20-%2018.56.38.80.webp"></p><p>你如果不知道哪里可以下载皮肤，可以去mcbbs上下载 <a href="https://www.mcbbs.net/">https://www.mcbbs.net/</a></p><p>正版账号和离线模式的区别就是离线模式进不了有正版验证的服务器，有能力就支持正版，毕竟这个游戏给我们带来了很多欢乐！</p>]]></content>
       
       
       <categories>
@@ -43,17 +43,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/shubiao.css"/>
-      <url>/css/shubiao.css</url>
-      
-        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -70,17 +59,6 @@
       <url>/css/custom.css</url>
       
         <content type="html"><![CDATA[  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 白天模式遮罩透明 */ #footer::before {    background: transparent !important;  } #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before,#post .post-outdate-notice:before,.fontawesomeIcon,.note:not(.no-icon)::before,hr:before {    display: inline-block;    font-weight: 600;    font-style: normal;    font-variant: normal;    font-family: 'Font Awesome 5 Free';    text-rendering: auto;    -webkit-font-smoothing: antialiased}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {    position: absolute;    color: #f47466;    /* 回形针 */    content: '\f0c1';      line-height: 1;    -webkit-transition: all .2s ease-out;    -moz-transition: all .2s ease-out;    -o-transition: all .2s ease-out;    -ms-transition: all .2s ease-out;    transition: all .2s ease-out;    /* 若要使用风车效果，请去掉下面的注释 */    content: '\f863';     animation: avatar_turn_around 1s linear infinite;}#article-container h1 {    padding-left: 1.4rem}#article-container h1 code {    font-size: 1rem}#article-container h1:before {    margin-left: -1.3rem;    top: calc(50% - .5rem);    font-size: 1rem}#article-container h1:hover {    padding-left: 1.6rem}#article-container h2 {    padding-left: 1.3rem}#article-container h2 code {    font-size: .9rem}#article-container h2:before {    margin-left: -1.4rem;    top: calc(50% - .45rem);    font-size: .9rem}#article-container h2:hover {    padding-left: 1.5rem}#article-container h3 {    padding-left: 1.2rem}#article-container h3 code {    font-size: .8rem;    top: calc(50% - .4rem);}#article-container h3:before {    margin-left: -1.2rem;    top: calc(50% - .4rem);    font-size: .8rem}#article-container h3:hover {    padding-left: 1.4rem}#article-container h4 {    padding-left: 1.1rem}#article-container h4 code {    font-size: .7rem}#article-container h4:before {    margin-left: -1rem;    top: calc(50% - .35rem);    font-size: .7rem}#article-container h4:hover {    padding-left: 1.3rem}#article-container h5 {    padding-left: 1rem}#article-container h5 code {    font-size: .6rem}#article-container h5:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h5:hover {    padding-left: 1.2rem}#article-container h6 {    padding-left: 1rem}#article-container h6 code {    font-size: .6rem}#article-container h6:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h6:hover {    padding-left: 1.2rem}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -109,11 +87,22 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/css/shubiao.css"/>
+      <url>/css/shubiao.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
+      
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -142,20 +131,20 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
-        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -169,6 +158,17 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
       
     </entry>
     
