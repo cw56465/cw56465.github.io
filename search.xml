@@ -8,7 +8,7 @@
       <link href="/post/c361602c.html"/>
       <url>/post/c361602c.html</url>
       
-        <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p><strong>由于这几天比较忙，没时间写博客，故一直没用PicGo上传图片，昨天心血来潮，想写篇文章，搞好图片后发现上传不了，然后我就开始寻找解决方案</strong><br>    2022-12-02 17:22:38 [PicGo INFO] Before transform<br>    2022-12-02 17:22:38 [PicGo INFO] Transforming… Current transformer is [path]<br>    2022-12-02 17:22:38 [PicGo INFO] Before upload<br>    2022-12-02 17:22:38 [PicGo INFO] beforeUploadPlugins: renameFn running<br>    2022-12-02 17:22:38 [PicGo INFO] Uploading… Current uploader is [github]<br>    2022-12-02 17:22:40 [PicGo WARN] failed<br>    ——Error Stack Begin——<br>    RequestError: Error: read ECONNRESET<br>    at new RequestError (D:\Program Files\PicGo\resources\app.asar\node_modules\request-promise-core\lib\errors.js:14:15)<br>    at Request.plumbing.callback (D:\Program Files\PicGo\resources\app.  asar\node_modules\request-promise-core\lib\plumbing.js:87:29)<br>    at Request.RP$callback [as _callback] (D:\Program Files\PicGo\resources\app.asar\node_modules\request-promise-core\lib\plumbing.js:46:31)<br>    at self.callback (D:\Program Files\PicGo\resources\app.asar\node_modules\request\request.js:185:22)<br>    at Request.emit (events.js:200:13)<br>    at Request.onRequestError (D:\Program Files\PicGo\resources\app.asar\node_modules\request\request.js:877:8)<br>    at ClientRequest.emit (events.js:200:13)<br>    at TLSSocket.socketErrorListener (_http_client.js:402:9)<br>    at TLSSocket.emit (events.js:200:13)<br>    at emitErrorNT (internalreams&#x2F;destroy.js:91:8)<br>    ——-Error Stack End——-</p><blockquote><h1 id="1-GitHub问题"><a href="#1-GitHub问题" class="headerlink" title="1. GitHub问题"></a>1. <em><strong>GitHub问题</strong></em></h1></blockquote><p>开始我以为是GitHub的token失效了，然后我尝试重置了一下token,无效。我又用手机上的Flutter-PicGo导入GitHub，可以导入，所以不是GitHub仓库的问题。</p><p>我又怀疑是是GFW把GitHub域名劫持了，我ping了一下，果然不通，丢包率100%，我随即修改了host文件，我去找了下GitHub的IP，写在host文件里，保存。打开PicGo,还是导入不了GitHub仓库。</p><blockquote><h1 id="2-nodejs版本问题"><a href="#2-nodejs版本问题" class="headerlink" title="2. nodejs版本问题"></a>2. <em><strong>nodejs版本问题</strong></em></h1></blockquote><p>上浏览器查找我的错误，发现有人提到nodejs版本，我去换了好多版本，都没用，我又换回了我之前的版本，又白忙了半天。</p><blockquote><h1 id="3-PicGo版本问题"><a href="#3-PicGo版本问题" class="headerlink" title="3. PicGo版本问题"></a>3. <em><strong>PicGo版本问题</strong></em></h1></blockquote><p>换了很多PicGo版本，没用，每个版本报错还不一样，<img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021903333.png">但是我通过PicGo的文档和常见问题发现了一个关键点———<em><strong>代理</strong></em>。</p><blockquote><h1 id="4-上传代理"><a href="#4-上传代理" class="headerlink" title="4. 上传代理"></a>4. <em><strong>上传代理</strong></em></h1></blockquote><p>我抱着试试看的态度，随便填了一个7890端口,结果成功啦！！！当时我不知道这个端口是什么意思，我看到我cl*sh上有个端口7890，就试了试。然后我去了解了一下7890端口，可以去这个看看<a href="https://www.cnblogs.com/MNOP/p/4949862.html">端口</a>。</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021908889.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021915400.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021915399.png"></p><p>也可以去控制中心去查看你的端口:</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021854385.png"></p><p>填入端口:</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021854384.png"></p><p>重启PicGo即可使用。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p><strong>由于这几天比较忙，没时间写博客，故一直没用PicGo上传图片，昨天心血来潮，想写篇文章，搞好图片后发现上传不了，然后我就开始寻找解决方案</strong></p><pre><code>2022-12-02 17:22:38 [PicGo INFO] Before transform 2022-12-02 17:22:38 [PicGo INFO] Transforming... Current transformer is [path] 2022-12-02 17:22:38 [PicGo INFO] Before upload 2022-12-02 17:22:38 [PicGo INFO] beforeUploadPlugins: renameFn running 2022-12-02 17:22:38 [PicGo INFO] Uploading... Current uploader is [github] 2022-12-02 17:22:40 [PicGo WARN] failed------Error Stack Begin------RequestError: Error: read ECONNRESETat new RequestError (D:\Program Files\PicGo\resources\app.asar\node_modules\request-promise-core\lib\errors.js:14:15)at Request.plumbing.callback (D:\Program Files\PicGo\resources\app.  asar\node_modules\request-promise-core\lib\plumbing.js:87:29)at Request.RP$callback [as _callback] (D:\Program Files\PicGo\resources\app.asar\node_modules\request-promise-core\lib\plumbing.js:46:31)at self.callback (D:\Program Files\PicGo\resources\app.asar\node_modules\request\request.js:185:22)at Request.emit (events.js:200:13)at Request.onRequestError (D:\Program Files\PicGo\resources\app.asar\node_modules\request\request.js:877:8)at ClientRequest.emit (events.js:200:13)at TLSSocket.socketErrorListener (_http_client.js:402:9)at TLSSocket.emit (events.js:200:13)at emitErrorNT (internalreams/destroy.js:91:8)-------Error Stack End-------</code></pre><blockquote><h1 id="1-GitHub问题"><a href="#1-GitHub问题" class="headerlink" title="1. GitHub问题"></a>1. <em><strong>GitHub问题</strong></em></h1></blockquote><p>开始我以为是GitHub的token失效了，然后我尝试重置了一下token,无效。我又用手机上的Flutter-PicGo导入GitHub，可以导入，所以不是GitHub仓库的问题</p><p>我又怀疑是是GFW把GitHub域名劫持了，我ping了一下，果然不通，丢包率100%，我随即修改了host文件，我去找了下GitHub的IP，写在host文件里，保存。打开PicGo,还是导入不了GitHub仓库</p><blockquote><h1 id="2-nodejs版本问题"><a href="#2-nodejs版本问题" class="headerlink" title="2. nodejs版本问题"></a>2. <em><strong>nodejs版本问题</strong></em></h1></blockquote><p>上浏览器查找我的错误，发现有人提到nodejs版本，我去换了好多版本，都没用，我又换回了我之前的版本，又白忙了半天</p><blockquote><h1 id="3-PicGo版本问题"><a href="#3-PicGo版本问题" class="headerlink" title="3. PicGo版本问题"></a>3. <em><strong>PicGo版本问题</strong></em></h1></blockquote><p>换了很多PicGo版本，没用，每个版本报错还不一样<br><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021903333.png"><br>但是我通过PicGo的文档和常见问题发现了一个关键点———<em><strong>代理</strong></em></p><blockquote><h1 id="4-上传代理"><a href="#4-上传代理" class="headerlink" title="4. 上传代理"></a>4. <em><strong>上传代理</strong></em></h1></blockquote><p>我抱着试试看的态度，随便填了一个7890端口,结果成功啦！！！当时我不知道这个端口是什么意思，我看到我cl*sh上有个端口7890，就试了试。然后我去了解了一下7890端口，可以去这个看看<a href="https://www.cnblogs.com/MNOP/p/4949862.html">端口</a></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021908889.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021915400.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021915399.png"></p><p>也可以去控制中心去查看你的端口:</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021854385.png"></p><p>填入端口:</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212021854384.png"></p><p>重启PicGo即可使用</p>]]></content>
       
       
       <categories>
@@ -58,7 +58,7 @@
       <link href="/post/bf3b6d8b.html"/>
       <url>/post/bf3b6d8b.html</url>
       
-        <content type="html"><![CDATA[<h1 id="什么是双力臂"><a href="#什么是双力臂" class="headerlink" title="什么是双力臂"></a>什么是双力臂</h1><p>不同于引体向上仅拉到下巴，双力臂需要将整个身体拉至腰部触杠，双臂竖直支撑起身体，英文名就是muscle up 。双力臂有很多变式，根据握距不同，可以分窄距双力臂，宽距双力臂…其他还有像弹射双力臂，汉尼拔引体，慢速双力臂…等很多高阶动作。可以说，这个动作是街头健身(Street Workout)最经典的动作了。</p><hr><h1 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h1><p>很多人都是因为双力臂才知道的街头健身，我不一样，我是因为街头健身才了解的双力臂。一年半之前，我只知道俯卧撑和引体向上，只知道猛冲数量，训练起来不能说很无聊，但也有点枯燥。</p><p>有一天我看到了一个俄式挺身的视频，我觉得非常酷，就想练习这个，我便上网查找关于俄式挺身的教程。在这个过程中，我发现很多sw(街头健身)的视频作者，我了解了一下sw,发现sw的动作都很难，所以我想先练一个比较简单又比较酷的动作，这个动作就是双力臂了。</p><h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>当时是个小白，看到网上说双力臂基础要求是15个标准引体向上，当时就觉得，只要练到这个数量，我就能解锁双力臂。随后就是漫长的练习。</p><p>过了半年,我成功练到15个引体，之后我尝试了几周双力臂，一点成果也没有。</p><h2 id="心态"><a href="#心态" class="headerlink" title="心态"></a>心态</h2><p>练了很久没有进步，我没意识到是我的训练方法出了错，我开始变的非常失落，觉得自己不适合这个动作，便决定要放弃这个动作。</p><h2 id="转变"><a href="#转变" class="headerlink" title="转变"></a>转变</h2><p>过了半年，我解锁了单手引体，我觉得我可以再次尝试一下双力臂了，但是，我还是失败了。这时候，我意识到了，是我的训练方式有很大的问题，还有就是特别容易放弃。我重新去了解了一下双力臂，我发现我的引体和双力臂发力方式有很大的区别，我拉引体是挺胸拉，双力臂的话要含胸。之后改了发力方式，练习了几天借力，结果有一次随便一拉就上去了。当然第一次上去要借很多力，虽然很丑，但是我也很高兴，最关键的是我没有单手先上去，我是两个手一块上去的！！！</p><h2 id="成长"><a href="#成长" class="headerlink" title="成长"></a>成长</h2><p>解锁双力臂对我来说意义非凡，困扰终于得以解决，很多时候，真的是方向比努力更重要。双力臂，只是街健道路的第一步，我会坚持热爱，继续进步！</p><h1 id="个人经验"><a href="#个人经验" class="headerlink" title="个人经验"></a>个人经验</h1><p>虽然我练的很菜，我的博客可能也没有人看，但是我还是要分享一下我的经验，毕竟新手更懂新手😛。希望可以帮助一些像我一样的新手突破第一个动作。</p><h3 id="1-高位引体-单杠屈臂撑-离心训练，多尝试借力含胸拉引体"><a href="#1-高位引体-单杠屈臂撑-离心训练，多尝试借力含胸拉引体" class="headerlink" title="1.高位引体+单杠屈臂撑+离心训练，多尝试借力含胸拉引体"></a>1.高位引体+单杠屈臂撑+离心训练，多尝试借力含胸拉引体</h3><h3 id="2-状态好可以试试gtg训练一下，对突破动作有很大帮助"><a href="#2-状态好可以试试gtg训练一下，对突破动作有很大帮助" class="headerlink" title="2.状态好可以试试gtg训练一下，对突破动作有很大帮助"></a>2.状态好可以试试gtg训练一下，对突破动作有很大帮助</h3><h3 id="3-训练前要热身，一定要带上护腕，不要让手腕受伤！！！"><a href="#3-训练前要热身，一定要带上护腕，不要让手腕受伤！！！" class="headerlink" title="3.训练前要热身，一定要带上护腕，不要让手腕受伤！！！"></a>3.训练前要热身，一定要带上护腕，不要让手腕受伤！！！</h3>]]></content>
+        <content type="html"><![CDATA[<h1 id="什么是双力臂"><a href="#什么是双力臂" class="headerlink" title="什么是双力臂"></a>什么是双力臂</h1><p>不同于引体向上仅拉到下巴，双力臂需要将整个身体拉至腰部触杠，双臂竖直支撑起身体，英文名就是muscle up 。双力臂有很多变式，根据握距不同，可以分窄距双力臂，宽距双力臂…其他还有像弹射双力臂，汉尼拔引体，慢速双力臂…等很多高阶动作。可以说，这个动作是街头健身(Street Workout)最经典的动作了</p><hr><h1 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h1><p>很多人都是因为双力臂才知道的街头健身，我不一样，我是因为街头健身才了解的双力臂。一年半之前，我只知道俯卧撑和引体向上，只知道猛冲数量，训练起来不能说很无聊，但也有点枯燥</p><p>有一天我看到了一个俄式挺身的视频，我觉得非常酷，就想练习这个，我便上网查找关于俄式挺身的教程。在这个过程中，我发现很多sw(街头健身)的视频作者，我了解了一下sw,发现sw的动作都很难，所以我想先练一个比较简单又比较酷的动作，这个动作就是双力臂了</p><h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>当时是个小白，看到网上说双力臂基础要求是15个标准引体向上，当时就觉得，只要练到这个数量，我就能解锁双力臂。随后就是漫长的练习</p><p>过了半年,我成功练到15个引体，之后我尝试了几周双力臂，一点成果也没有</p><h2 id="心态"><a href="#心态" class="headerlink" title="心态"></a>心态</h2><p>练了很久没有进步，我没意识到是我的训练方法出了错，我开始变的非常失落，觉得自己不适合这个动作，便决定要放弃这个动作</p><h2 id="转变"><a href="#转变" class="headerlink" title="转变"></a>转变</h2><p>过了半年，我解锁了单手引体，我觉得我可以再次尝试一下双力臂了，但是，我还是失败了。这时候，我意识到了，是我的训练方式有很大的问题，还有就是特别容易放弃。我重新去了解了一下双力臂，我发现我的引体和双力臂发力方式有很大的区别，我拉引体是挺胸拉，双力臂的话要含胸。之后改了发力方式，练习了几天借力，结果有一次随便一拉就上去了。当然第一次上去要借很多力，虽然很丑，但是我也很高兴，最关键的是我没有单手先上去，我是两个手一块上去的！！！</p><h2 id="成长"><a href="#成长" class="headerlink" title="成长"></a>成长</h2><p>解锁双力臂对我来说意义非凡，困扰终于得以解决，很多时候，真的是方向比努力更重要。双力臂，只是街健道路的第一步，我会坚持热爱，继续进步！</p><h1 id="个人经验"><a href="#个人经验" class="headerlink" title="个人经验"></a>个人经验</h1><p>虽然我练的很菜，我的博客可能也没有人看，但是我还是要分享一下我的经验，毕竟新手更懂新手😛。希望可以帮助一些像我一样的新手突破第一个动作</p><h3 id="1-高位引体-单杠屈臂撑-离心训练，多尝试借力含胸拉引体"><a href="#1-高位引体-单杠屈臂撑-离心训练，多尝试借力含胸拉引体" class="headerlink" title="1.高位引体+单杠屈臂撑+离心训练，多尝试借力含胸拉引体"></a>1.高位引体+单杠屈臂撑+离心训练，多尝试借力含胸拉引体</h3><h3 id="2-状态好可以试试gtg训练一下，对突破动作有很大帮助"><a href="#2-状态好可以试试gtg训练一下，对突破动作有很大帮助" class="headerlink" title="2.状态好可以试试gtg训练一下，对突破动作有很大帮助"></a>2.状态好可以试试gtg训练一下，对突破动作有很大帮助</h3><h3 id="3-训练前要热身，一定要带上护腕，不要让手腕受伤！！！"><a href="#3-训练前要热身，一定要带上护腕，不要让手腕受伤！！！" class="headerlink" title="3.训练前要热身，一定要带上护腕，不要让手腕受伤！！！"></a>3.训练前要热身，一定要带上护腕，不要让手腕受伤！！！</h3>]]></content>
       
       
       <categories>
@@ -119,10 +119,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
       
-        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -134,17 +145,6 @@
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -174,43 +174,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/shubiao.css"/>
-      <url>/css/shubiao.css</url>
-      
-        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
       
         <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/shubiao.js"/>
-      <url>/js/shubiao.js</url>
-      
-        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -228,11 +195,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/shubiao.css"/>
+      <url>/css/shubiao.css</url>
+      
+        <content type="html"><![CDATA[#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
       
     </entry>
     
@@ -242,6 +220,28 @@
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/shubiao.js"/>
+      <url>/js/shubiao.js</url>
+      
+        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
