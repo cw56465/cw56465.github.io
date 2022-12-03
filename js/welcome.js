@@ -1,54 +1,36 @@
-// 霓虹灯效果
-// 颜色数组
-var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];
-// 颜色索引
-var idx = 0;
-
-// 切换颜色
-function changeColor() {
-    // 仅夜间模式才启用
-    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {
-        if (document.getElementById("site-name"))
-            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";
-        if (document.getElementById("site-title"))
-            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";
-        if (document.getElementById("site-subtitle"))
-            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";
-        if (document.getElementById("post-info"))
-            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";
-        try {
-            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";
-            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";
-        } catch {
-            
-        }
-        idx++;
-        if (idx == 8) {
-            idx = 0;
-        }
-    } else {
-        // 白天模式恢复默认
-        if (document.getElementById("site-name"))
-            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";
-        if (document.getElementById("site-title"))
-            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";
-        if (document.getElementById("site-subtitle"))
-            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";
-        if (document.getElementById("post-info"))
-            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";
-        try {
-            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";
-            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";
-        } catch {
-            
-        }
+//首次访问弹窗
+if (localStorage.getItem("popWelcomeWindow") != "0") {
+    if(document.referrer==undefined||document.referrer.indexOf("yisous.xyz")!=-1||document.referrer.indexOf("ariasaka.top")!=-1){ //改成自己域名，注意是referrer!!! qwq
+        Snackbar.show({
+            pos: "top-right",
+            showAction: false,
+            text: '欢迎访问本站！'
+        })
+    }else{
+        Snackbar.show({
+                pos: "top-right",
+                showAction: false,
+                text: `欢迎来自${document.referrer.split("://")[1].split("/")[0]}的童鞋访问本站！`
+            })
+        localStorage.setItem("popWelcomeWindow", "0");
     }
 }
+if (sessionStorage.getItem("popCookieWindow") != "0") {
+    setTimeout(function () {
+        Snackbar.show({
+            text: '本站使用Cookie和本地/会话存储保证浏览体验和网站统计',
+            pos: 'bottom-right',
+            actionText: "查看博客声明",
+            onActionClick: function (element) {
+                window.open("/license")
+            },
+        })
+    }, 3000)
+}
+//不在弹出Cookie提醒
+sessionStorage.setItem("popCookieWindow", "0");
 
-// 开启计时器
-window.onload = setInterval(changeColor, 1200);
-
-
+//自带上文浏览器提示
 
 function browserTC() {
     btf.snackbarShow("");
