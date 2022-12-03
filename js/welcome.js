@@ -93,6 +93,7 @@ if(getCookie('browsertc')!=1){
 
 
 
+// 浏览器版本
 
 function browserTC() {
     btf.snackbarShow("");
@@ -152,6 +153,4 @@ if(getCookie('browsertc')!=1){
     }, 1);
     browserVersion();
 }
-
-
 
