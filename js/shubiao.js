@@ -1,3 +1,5 @@
+
+// 鼠标样式
 var CURSOR;
 
 Math.lerp = (a, b, n) => (1 - n) * a + n * b;
@@ -80,5 +82,3 @@ class Cursor {
     CURSOR = new Cursor();
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
-
-
