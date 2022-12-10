@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ChatGPT体验</title>
+      <link href="/post/ab78369b.html"/>
+      <url>/post/ab78369b.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><strong>先让CharGPT介绍一下自己😆😆😆</strong></p></blockquote><p><em>Who are you?</em></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215552.png"></p><p>再试试中文😋</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215553.png"></p><p>速度挺快的。</p><blockquote><p><strong>可不可以当搜索引擎用呢?试试看”VSCode”</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215555.png"></p><blockquote><p><strong>是否可以用来写作业？😝😝😝😝</strong></p></blockquote><p>写篇高中折磨我很久的英语作文😁😁</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215554.png"></p><p>我靠，可以啊,既然英语作文可以，那中文作文呢？</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102227889.png"></p><p>…明明是800字，为什么只有350个字。try again再试几次</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102227890.png"></p><p>…果然不可以，但是可以好多篇拼起来🤭</p><p>写篇诗</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215556.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102215557.png"></p><p>看不懂😵😵😵</p><p>还是用来写程序吧，狠狠滴偷懒！😋😋😋</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102203888.png"></p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102203887.png"></p><p>非常好！！！<br>这还能搞到VSCode和浏览器上，太方便啦！</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102242707.png"></p><p>虽然但是，猪比是这个意思吗，嗯扯就完了</p><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102244496.jpg"></p><blockquote><p><strong>最后再问问CharGPT的优缺点</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/cw56465/blog-imgs@master/202212102247656.png"></p><p>没有。自我感觉这个CharGPT更像一个ai助手,她可以给我们遇到的问题提供一个参考，但要自己分辨信息的准确性，用好了可以大大提高我们生活和工作效率，写检讨胡扯的时候特别好用！！！👻👻👻</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ChatGPT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PicGo上传失败问题</title>
       <link href="/post/c361602c.html"/>
       <url>/post/c361602c.html</url>
@@ -107,17 +126,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -129,11 +137,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/cat.css"/>
-      <url>/css/cat.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -152,10 +160,21 @@
     
     <entry>
       <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
+      <link href="/css/lantern.css"/>
+      <url>/css/lantern.css</url>
       
-        <content type="html"><![CDATA[/* 运行时间 */div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+        <content type="html"><![CDATA[/* 灯笼 Start */* {    box-sizing: border-box;}/* 移动端显示/隐藏 /none/block，可自定义显示一个 */@media screen and (max-width: 970px) {    .d-box1 {        display: none;    }    .dengl .d-box {        right: 0px;        top: -40px;        /* 自定义灯笼大小 */        transform: scale(0.4);    }}.dengl {    position: fixed;    z-index: 9;}/* .d-box,.d-box1{    z-index: 9;  } */.d-box {    position: fixed;    /* 自定义灯笼的位置 */    right: 85px;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}.d-box1 {    position: fixed;    /* 自定义灯笼的位置 */    left: 0;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}/* 修改灯笼的字体 */.d-box .d1::after {    content: '虎年大吉';}.d-box1 .d1::after {    content: '万事顺遂';}.d-box1 .d1,.d-box1 .d2,.d-box1 .d1::after,.d-box1 .d1::before,.d-box1 .d2::after,.d-box1 .d2::before,.d-box1 .d2 ul li span,.d-box1 .d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    /* box-shadow: 0 5px 61px rgba(255, 240, 29, 0.88); */}.d1,.d2,.d1::after,.d1::before,.d2::after,.d2::before,.d2 ul li span,.d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    box-shadow: 0 5px 61px #ff1d1d;}.d1::after,.d1::before {    height: 82px;    position: absolute;    top: 0;    content: '';    font-size: 17px;}.d1,.d2 {    position: relative;    animation: swing 4s linear infinite;    transform-origin: top center;}.d1 {    width: 160px;    top: 100px;    height: 90px;    right: 0;    border-radius: 80px/49px;}.d1::before {    top: -5px;    right: 7px;    width: 123px;    border-radius: 62px/52px;}.d1::after {    text-align: center;    line-height: 90px;    color: #ffe31d;    font-weight: 600;    top: -5px;    right: 35px;    width: 69px;    border-radius: 41px/49px;}.d1 span {    position: absolute;    top: 84px;    left: 49px;    width: 50px;    height: 16px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 span:nth-child(2) {    top: -17px;    border-radius: 10px 10px 0 0;}.d1 p {    position: absolute;    top: -31px;    left: 13px;    width: 16px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d1 ul {    position: relative;    top: 80px;    left: 13px;    width: 54px;    display: flex;}.d1 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 2.5px;    width: 5px;    border-radius: 5px;    border-right: 3.5px solid #5c1713;}.d1 ul li:nth-child(3) {    content: '';    height: 50px;}.d1 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 47px;    left: 54px;    width: 5px;    height: 5px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 ul li span {    position: absolute;    top: 20px;    left: 55px;    width: 13px;    height: 19px;    border-radius: 14px;}.d2::after,.d2::before {    position: absolute;    height: 128px;    top: -3px;    content: '';}.d2 {    width: 199px;    height: 128px;    top: -61px;    right: -122px;    border-radius: 98px/70px;}.d2::before {    top: -8px;    right: 18px;    width: 143px;    border-radius: 69px/67px;}/* 自定义背景图片 */.d2::after {    top: -8px;    right: 51px;    width: 75px;    border-radius: 57px/89px;    background: url(https://bu.dusays.com/2021/02/03/7e1a77cf800cf.png) no-repeat;    background-position: center;    background-size: 92px auto;}.d2 span {    position: absolute;    top: 123px;    left: 68px;    width: 55px;    height: 14px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 span:nth-child(2) {    top: -16px;    border-radius: 10px 10px 0 0;}.d2 p {    position: absolute;    top: -32px;    left: 13px;    width: 19px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d2 ul {    position: relative;    top: 121px;    left: 32px;    width: 53px;    display: flex;}.d2 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 3px;    width: 4px;    border-radius: 7px;    border-right: 3px solid #5c1713;}.d2 ul li:nth-child(3) {    content: '';    height: 60px;}.d2 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 59px;    left: 53px;    width: 9px;    height: 6px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 ul li span {    position: absolute;    top: 21px;    left: 54px;    width: 18px;    height: 17px;    border-radius: 20px;}@keyframes swing {    0% {        transform: rotate(0);    }    25% {        transform: rotate(-13deg);    }    50% {        transform: rotate(0);    }    75% {        transform: rotate(13deg);    }    100% {        transform: rotate(0);    }}/* 灯笼 END */]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/cat.css"/>
+      <url>/css/cat.css</url>
+      
+        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
       
     </entry>
     
@@ -174,10 +193,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/lantern.css"/>
-      <url>/css/lantern.css</url>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
       
-        <content type="html"><![CDATA[/* 灯笼 Start */* {    box-sizing: border-box;}/* 移动端显示/隐藏 /none/block，可自定义显示一个 */@media screen and (max-width: 970px) {    .d-box1 {        display: none;    }    .dengl .d-box {        right: 0px;        top: -40px;        /* 自定义灯笼大小 */        transform: scale(0.4);    }}.dengl {    position: fixed;    z-index: 9;}/* .d-box,.d-box1{    z-index: 9;  } */.d-box {    position: fixed;    /* 自定义灯笼的位置 */    right: 85px;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}.d-box1 {    position: fixed;    /* 自定义灯笼的位置 */    left: 0;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}/* 修改灯笼的字体 */.d-box .d1::after {    content: '虎年大吉';}.d-box1 .d1::after {    content: '万事顺遂';}.d-box1 .d1,.d-box1 .d2,.d-box1 .d1::after,.d-box1 .d1::before,.d-box1 .d2::after,.d-box1 .d2::before,.d-box1 .d2 ul li span,.d-box1 .d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    /* box-shadow: 0 5px 61px rgba(255, 240, 29, 0.88); */}.d1,.d2,.d1::after,.d1::before,.d2::after,.d2::before,.d2 ul li span,.d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    box-shadow: 0 5px 61px #ff1d1d;}.d1::after,.d1::before {    height: 82px;    position: absolute;    top: 0;    content: '';    font-size: 17px;}.d1,.d2 {    position: relative;    animation: swing 4s linear infinite;    transform-origin: top center;}.d1 {    width: 160px;    top: 100px;    height: 90px;    right: 0;    border-radius: 80px/49px;}.d1::before {    top: -5px;    right: 7px;    width: 123px;    border-radius: 62px/52px;}.d1::after {    text-align: center;    line-height: 90px;    color: #ffe31d;    font-weight: 600;    top: -5px;    right: 35px;    width: 69px;    border-radius: 41px/49px;}.d1 span {    position: absolute;    top: 84px;    left: 49px;    width: 50px;    height: 16px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 span:nth-child(2) {    top: -17px;    border-radius: 10px 10px 0 0;}.d1 p {    position: absolute;    top: -31px;    left: 13px;    width: 16px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d1 ul {    position: relative;    top: 80px;    left: 13px;    width: 54px;    display: flex;}.d1 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 2.5px;    width: 5px;    border-radius: 5px;    border-right: 3.5px solid #5c1713;}.d1 ul li:nth-child(3) {    content: '';    height: 50px;}.d1 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 47px;    left: 54px;    width: 5px;    height: 5px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 ul li span {    position: absolute;    top: 20px;    left: 55px;    width: 13px;    height: 19px;    border-radius: 14px;}.d2::after,.d2::before {    position: absolute;    height: 128px;    top: -3px;    content: '';}.d2 {    width: 199px;    height: 128px;    top: -61px;    right: -122px;    border-radius: 98px/70px;}.d2::before {    top: -8px;    right: 18px;    width: 143px;    border-radius: 69px/67px;}/* 自定义背景图片 */.d2::after {    top: -8px;    right: 51px;    width: 75px;    border-radius: 57px/89px;    background: url(https://bu.dusays.com/2021/02/03/7e1a77cf800cf.png) no-repeat;    background-position: center;    background-size: 92px auto;}.d2 span {    position: absolute;    top: 123px;    left: 68px;    width: 55px;    height: 14px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 span:nth-child(2) {    top: -16px;    border-radius: 10px 10px 0 0;}.d2 p {    position: absolute;    top: -32px;    left: 13px;    width: 19px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d2 ul {    position: relative;    top: 121px;    left: 32px;    width: 53px;    display: flex;}.d2 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 3px;    width: 4px;    border-radius: 7px;    border-right: 3px solid #5c1713;}.d2 ul li:nth-child(3) {    content: '';    height: 60px;}.d2 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 59px;    left: 53px;    width: 9px;    height: 6px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 ul li span {    position: absolute;    top: 21px;    left: 54px;    width: 18px;    height: 17px;    border-radius: 20px;}@keyframes swing {    0% {        transform: rotate(0);    }    25% {        transform: rotate(-13deg);    }    50% {        transform: rotate(0);    }    75% {        transform: rotate(13deg);    }    100% {        transform: rotate(0);    }}/* 灯笼 END */]]></content>
+        <content type="html"><![CDATA[/* 运行时间 */div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -207,17 +226,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
-      
-        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/rightmenu.js"/>
       <url>/js/rightmenu.js</url>
       
@@ -240,6 +248,17 @@
     
     <entry>
       <title></title>
+      <link href="/js/shubiao.js"/>
+      <url>/js/shubiao.js</url>
+      
+        <content type="html"><![CDATA[// 鼠标样式var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
       
@@ -251,10 +270,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/shubiao.js"/>
-      <url>/js/shubiao.js</url>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
       
-        <content type="html"><![CDATA[// 鼠标样式var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
       
     </entry>
     
@@ -283,22 +302,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
