@@ -126,11 +126,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/cat.css"/>
-      <url>/css/cat.css</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+        <content type="html"><![CDATA[<h1 id="好好好"><a href="#好好好" class="headerlink" title="好好好"></a><em><strong>好好好</strong></em></h1><h1 id="赢赢赢"><a href="#赢赢赢" class="headerlink" title="赢赢赢"></a><em><strong>赢赢赢</strong></em></h1><h1 id="麻麻麻"><a href="#麻麻麻" class="headerlink" title="麻麻麻"></a><em><strong>麻麻麻</strong></em></h1><h1 id="给他迎头痛击！！！"><a href="#给他迎头痛击！！！" class="headerlink" title="给他迎头痛击！！！"></a>给他迎头痛击！！！</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -149,87 +160,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[ /* 页脚与头图透明 */ #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 白天模式遮罩透明 */ #footer::before {    background: transparent !important;  } #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 *//* #aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 *//* [data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;} *//* 个人信息Follow me按钮 *//* #aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;} */#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before,#post .post-outdate-notice:before,.fontawesomeIcon,.note:not(.no-icon)::before,hr:before {    display: inline-block;    font-weight: 600;    font-style: normal;    font-variant: normal;    font-family: 'Font Awesome 5 Free';    text-rendering: auto;    -webkit-font-smoothing: antialiased}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {    position: absolute;    color: #f47466;    /* 回形针 */    content: '\f0c1';      line-height: 1;    -webkit-transition: all .2s ease-out;    -moz-transition: all .2s ease-out;    -o-transition: all .2s ease-out;    -ms-transition: all .2s ease-out;    transition: all .2s ease-out;    /* 若要使用风车效果，请去掉下面的注释 */    content: '\f863';     animation: avatar_turn_around 1s linear infinite;}#article-container h1 {    padding-left: 1.4rem}#article-container h1 code {    font-size: 1rem}#article-container h1:before {    margin-left: -1.3rem;    top: calc(50% - .5rem);    font-size: 1rem}#article-container h1:hover {    padding-left: 1.6rem}#article-container h2 {    padding-left: 1.3rem}#article-container h2 code {    font-size: .9rem}#article-container h2:before {    margin-left: -1.4rem;    top: calc(50% - .45rem);    font-size: .9rem}#article-container h2:hover {    padding-left: 1.5rem}#article-container h3 {    padding-left: 1.2rem}#article-container h3 code {    font-size: .8rem;    top: calc(50% - .4rem);}#article-container h3:before {    margin-left: -1.2rem;    top: calc(50% - .4rem);    font-size: .8rem}#article-container h3:hover {    padding-left: 1.4rem}#article-container h4 {    padding-left: 1.1rem}#article-container h4 code {    font-size: .7rem}#article-container h4:before {    margin-left: -1rem;    top: calc(50% - .35rem);    font-size: .7rem}#article-container h4:hover {    padding-left: 1.3rem}#article-container h5 {    padding-left: 1rem}#article-container h5 code {    font-size: .6rem}#article-container h5:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h5:hover {    padding-left: 1.2rem}#article-container h6 {    padding-left: 1rem}#article-container h6 code {    font-size: .6rem}#article-container h6:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h6:hover {    padding-left: 1.2rem}/* 图标 */.iconfont {  font-family: "iconfont" !important;  font-size: 5em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/rightmenu.css"/>
-      <url>/css/rightmenu.css</url>
-      
-        <content type="html"><![CDATA[/* rightMenu */#rightMenu{display: none;position: fixed;width: 160px;height: fit-content;top: 10%;left: 10%;background-color: var(--card-bg);border: 1px solid var(--font-color);border-radius: 8px;z-index: 100;}#rightMenu .rightMenu-group{padding: 7px 6px;}#rightMenu .rightMenu-group:not(:nth-last-child(1)){border-bottom: 1px solid var(--font-color);}#rightMenu .rightMenu-group.rightMenu-small{display: flex;justify-content: space-between;}#rightMenu .rightMenu-group .rightMenu-item{height: 30px;line-height: 30px;border-radius: 8px;transition: 0.3s;color: var(--font-color);}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item{display: flex;height: 40px;line-height: 40px;padding: 0 4px;}#rightMenu .rightMenu-group .rightMenu-item:hover{background-color: var(--text-bg-hover);}#rightMenu .rightMenu-group .rightMenu-item i{display: inline-block;text-align: center;line-height: 30px;width: 30px;height: 30px;padding: 0 5px;}#rightMenu .rightMenu-group .rightMenu-item span{line-height: 30px;}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item *{height: 40px;line-height: 40px;}.rightMenu-group.hide{display: none;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/lantern.css"/>
-      <url>/css/lantern.css</url>
-      
-        <content type="html"><![CDATA[/* 灯笼 Start */* {    box-sizing: border-box;}/* 移动端显示/隐藏 /none/block，可自定义显示一个 */@media screen and (max-width: 970px) {    .d-box1 {        display: none;    }    .dengl .d-box {        right: 0px;        top: -40px;        /* 自定义灯笼大小 */        transform: scale(0.4);    }}.dengl {    position: fixed;    z-index: 9;}/* .d-box,.d-box1{    z-index: 9;  } */.d-box {    position: fixed;    /* 自定义灯笼的位置 */    right: 85px;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}.d-box1 {    position: fixed;    /* 自定义灯笼的位置 */    left: 0;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}/* 修改灯笼的字体 */.d-box .d1::after {    content: '虎年大吉';}.d-box1 .d1::after {    content: '万事顺遂';}.d-box1 .d1,.d-box1 .d2,.d-box1 .d1::after,.d-box1 .d1::before,.d-box1 .d2::after,.d-box1 .d2::before,.d-box1 .d2 ul li span,.d-box1 .d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    /* box-shadow: 0 5px 61px rgba(255, 240, 29, 0.88); */}.d1,.d2,.d1::after,.d1::before,.d2::after,.d2::before,.d2 ul li span,.d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    box-shadow: 0 5px 61px #ff1d1d;}.d1::after,.d1::before {    height: 82px;    position: absolute;    top: 0;    content: '';    font-size: 17px;}.d1,.d2 {    position: relative;    animation: swing 4s linear infinite;    transform-origin: top center;}.d1 {    width: 160px;    top: 100px;    height: 90px;    right: 0;    border-radius: 80px/49px;}.d1::before {    top: -5px;    right: 7px;    width: 123px;    border-radius: 62px/52px;}.d1::after {    text-align: center;    line-height: 90px;    color: #ffe31d;    font-weight: 600;    top: -5px;    right: 35px;    width: 69px;    border-radius: 41px/49px;}.d1 span {    position: absolute;    top: 84px;    left: 49px;    width: 50px;    height: 16px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 span:nth-child(2) {    top: -17px;    border-radius: 10px 10px 0 0;}.d1 p {    position: absolute;    top: -31px;    left: 13px;    width: 16px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d1 ul {    position: relative;    top: 80px;    left: 13px;    width: 54px;    display: flex;}.d1 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 2.5px;    width: 5px;    border-radius: 5px;    border-right: 3.5px solid #5c1713;}.d1 ul li:nth-child(3) {    content: '';    height: 50px;}.d1 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 47px;    left: 54px;    width: 5px;    height: 5px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 ul li span {    position: absolute;    top: 20px;    left: 55px;    width: 13px;    height: 19px;    border-radius: 14px;}.d2::after,.d2::before {    position: absolute;    height: 128px;    top: -3px;    content: '';}.d2 {    width: 199px;    height: 128px;    top: -61px;    right: -122px;    border-radius: 98px/70px;}.d2::before {    top: -8px;    right: 18px;    width: 143px;    border-radius: 69px/67px;}/* 自定义背景图片 */.d2::after {    top: -8px;    right: 51px;    width: 75px;    border-radius: 57px/89px;    background: url(https://bu.dusays.com/2021/02/03/7e1a77cf800cf.png) no-repeat;    background-position: center;    background-size: 92px auto;}.d2 span {    position: absolute;    top: 123px;    left: 68px;    width: 55px;    height: 14px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 span:nth-child(2) {    top: -16px;    border-radius: 10px 10px 0 0;}.d2 p {    position: absolute;    top: -32px;    left: 13px;    width: 19px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d2 ul {    position: relative;    top: 121px;    left: 32px;    width: 53px;    display: flex;}.d2 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 3px;    width: 4px;    border-radius: 7px;    border-right: 3px solid #5c1713;}.d2 ul li:nth-child(3) {    content: '';    height: 60px;}.d2 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 59px;    left: 53px;    width: 9px;    height: 6px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 ul li span {    position: absolute;    top: 21px;    left: 54px;    width: 18px;    height: 17px;    border-radius: 20px;}@keyframes swing {    0% {        transform: rotate(0);    }    25% {        transform: rotate(-13deg);    }    50% {        transform: rotate(0);    }    75% {        transform: rotate(13deg);    }    100% {        transform: rotate(0);    }}/* 灯笼 END */]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[/* 运行时间 */div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/shubiao.css"/>
-      <url>/css/shubiao.css</url>
-      
-        <content type="html"><![CDATA[/* 鼠标样式 */#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="好好好"><a href="#好好好" class="headerlink" title="好好好"></a><em><strong>好好好</strong></em></h1><h1 id="赢赢赢"><a href="#赢赢赢" class="headerlink" title="赢赢赢"></a><em><strong>赢赢赢</strong></em></h1><h1 id="麻麻麻"><a href="#麻麻麻" class="headerlink" title="麻麻麻"></a><em><strong>麻麻麻</strong></em></h1><h1 id="给他迎头痛击！！！"><a href="#给他迎头痛击！！！" class="headerlink" title="给他迎头痛击！！！"></a>给他迎头痛击！！！</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/cat.js"/>
       <url>/js/cat.js</url>
       
         <content type="html"><![CDATA[if (document.body.clientWidth > 992) {    function getBasicInfo() {        /* 窗口高度 */        var ViewH = $(window).height();        /* document高度 */        var DocH = $("body")[0].scrollHeight;        /* 滚动的高度 */        var ScrollTop = $(window).scrollTop();        /* 可滚动的高度 */        var S_V = DocH - ViewH;        var Band_H = ScrollTop / (DocH - ViewH) * 100;        return {            ViewH: ViewH,            DocH: DocH,            ScrollTop: ScrollTop,            Band_H: Band_H,            S_V: S_V        }    };    function show(basicInfo) {        if (basicInfo.ScrollTop > 0.001) {            $(".neko").css('display', 'block');        } else {            $(".neko").css('display', 'none');        }    }    (function ($) {        $.fn.nekoScroll = function (option) {            var defaultSetting = {                top: '0',                scroWidth: 6 + 'px',                z_index: 9999,                zoom: 0.9,                borderRadius: 5 + 'px',                right: 60 + 'px',                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",                hoverMsg: "喵喵喵~",                color: "#6f42c1",                during: 500,                blog_body: "body",            };            var setting = $.extend(defaultSetting, option);            var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +                this.prop("id") : this.prop("nodeName");            if ($(".neko").length == 0) {                this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");            }            let basicInfo = getBasicInfo();            $(getThis)                .css({                    'position': 'fixed',                    'width': setting.scroWidth,                    'top': setting.top,                    'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                    'z-index': setting.z_index,                    'background-color': setting.bgcolor,                    "border-radius": setting.borderRadius,                    'right': setting.right,                    'background-image': 'url(' + setting.scImg + ')',                    'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                    'background-size': 'contain'                });            $("#" + setting.nekoname)                .css({                    'position': 'fixed',                    'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                    'z-index': setting.z_index * 10,                    'right': setting.right,                    'background-image': 'url(' + setting.nekoImg + ')',                });            show(getBasicInfo());            $(window)                .scroll(function () {                    let basicInfo = getBasicInfo();                    show(basicInfo);                    $(getThis)                        .css({                            'position': 'fixed',                            'width': setting.scroWidth,                            'top': setting.top,                            'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                            'z-index': setting.z_index,                            'background-color': setting.bgcolor,                            "border-radius": setting.borderRadius,                            'right': setting.right,                            'background-image': 'url(' + setting.scImg + ')',                            'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                            'background-size': 'contain'                        });                    $("#" + setting.nekoname)                        .css({                            'position': 'fixed',                            'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                            'z-index': setting.z_index * 10,                            'right': setting.right,                            'background-image': 'url(' + setting.nekoImg + ')',                        });                    if (basicInfo.ScrollTop == basicInfo.S_V) {                        $("#" + setting.nekoname)                            .addClass("showMsg")                    } else {                        $("#" + setting.nekoname)                            .removeClass("showMsg");                        $("#" + setting.nekoname)                            .attr("data-msg", setting.hoverMsg);                    }                });            this.click(function (e) {                btf.scrollToDest(0, 500)            });            $("#" + setting.nekoname)                .click(function () {                    btf.scrollToDest(0, 500)                });            return this;        }    })(jQuery);    $(document).ready(function () {        //部分自定义        $("#myscoll").nekoScroll({            bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效            borderRadius: '2em',            zoom: 0.9        }        );        //自定义（去掉以下注释，并注释掉其他的查看效果）        /*        $("#myscoll").nekoScroll({            nekoname:'neko1', //nekoname，相当于id            nekoImg:'img/猫咪.png', //neko的背景图片            scImg:"img/绳1.png", //绳子的背景图片            bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效            zoom:0.9, //绳子长度的缩放值            hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息            right:'100px', //距离页面右边的距离            fontFamily:'楷体', //对话框字体            fontSize:'14px', //对话框字体的大小            color:'#1e90ff', //对话框字体颜色            scroWidth:'8px', //绳子的宽度            z_index:100, //不用解释了吧            during:1200, //从顶部到底部滑动的时长        });        */    })}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -280,11 +214,88 @@
     
     
     <entry>
+      <title></title>
+      <link href="/css/cat.css"/>
+      <url>/css/cat.css</url>
+      
+        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/lantern.css"/>
+      <url>/css/lantern.css</url>
+      
+        <content type="html"><![CDATA[/* 灯笼 Start */* {    box-sizing: border-box;}/* 移动端显示/隐藏 /none/block，可自定义显示一个 */@media screen and (max-width: 970px) {    .d-box1 {        display: none;    }    .dengl .d-box {        right: 0px;        top: -40px;        /* 自定义灯笼大小 */        transform: scale(0.4);    }}.dengl {    position: fixed;    z-index: 9;}/* .d-box,.d-box1{    z-index: 9;  } */.d-box {    position: fixed;    /* 自定义灯笼的位置 */    right: 85px;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}.d-box1 {    position: fixed;    /* 自定义灯笼的位置 */    left: 0;    top: 0;    /* 自定义灯笼大小 */    transform: scale(0.8);}/* 修改灯笼的字体 */.d-box .d1::after {    content: '虎年大吉';}.d-box1 .d1::after {    content: '万事顺遂';}.d-box1 .d1,.d-box1 .d2,.d-box1 .d1::after,.d-box1 .d1::before,.d-box1 .d2::after,.d-box1 .d2::before,.d-box1 .d2 ul li span,.d-box1 .d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    /* box-shadow: 0 5px 61px rgba(255, 240, 29, 0.88); */}.d1,.d2,.d1::after,.d1::before,.d2::after,.d2::before,.d2 ul li span,.d1 ul li span {    background-color: #f01f1a;    border: 5px solid #5c1713;    /* 自定义灯笼的阴影 */    box-shadow: 0 5px 61px #ff1d1d;}.d1::after,.d1::before {    height: 82px;    position: absolute;    top: 0;    content: '';    font-size: 17px;}.d1,.d2 {    position: relative;    animation: swing 4s linear infinite;    transform-origin: top center;}.d1 {    width: 160px;    top: 100px;    height: 90px;    right: 0;    border-radius: 80px/49px;}.d1::before {    top: -5px;    right: 7px;    width: 123px;    border-radius: 62px/52px;}.d1::after {    text-align: center;    line-height: 90px;    color: #ffe31d;    font-weight: 600;    top: -5px;    right: 35px;    width: 69px;    border-radius: 41px/49px;}.d1 span {    position: absolute;    top: 84px;    left: 49px;    width: 50px;    height: 16px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 span:nth-child(2) {    top: -17px;    border-radius: 10px 10px 0 0;}.d1 p {    position: absolute;    top: -31px;    left: 13px;    width: 16px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d1 ul {    position: relative;    top: 80px;    left: 13px;    width: 54px;    display: flex;}.d1 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 2.5px;    width: 5px;    border-radius: 5px;    border-right: 3.5px solid #5c1713;}.d1 ul li:nth-child(3) {    content: '';    height: 50px;}.d1 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 47px;    left: 54px;    width: 5px;    height: 5px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d1 ul li span {    position: absolute;    top: 20px;    left: 55px;    width: 13px;    height: 19px;    border-radius: 14px;}.d2::after,.d2::before {    position: absolute;    height: 128px;    top: -3px;    content: '';}.d2 {    width: 199px;    height: 128px;    top: -61px;    right: -122px;    border-radius: 98px/70px;}.d2::before {    top: -8px;    right: 18px;    width: 143px;    border-radius: 69px/67px;}/* 自定义背景图片 */.d2::after {    top: -8px;    right: 51px;    width: 75px;    border-radius: 57px/89px;    background: url(https://bu.dusays.com/2021/02/03/7e1a77cf800cf.png) no-repeat;    background-position: center;    background-size: 92px auto;}.d2 span {    position: absolute;    top: 123px;    left: 68px;    width: 55px;    height: 14px;    z-index: 2;    border-radius: 0 0 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 span:nth-child(2) {    top: -16px;    border-radius: 10px 10px 0 0;}.d2 p {    position: absolute;    top: -32px;    left: 13px;    width: 19px;    height: 13px;    border-radius: 25px;    border: 5px solid #5c1713;    border-bottom: 0;}.d2 ul {    position: relative;    top: 121px;    left: 32px;    width: 53px;    display: flex;}.d2 li {    flex: 1;    list-style: none;    height: 24px;    margin: 0px 3px;    width: 4px;    border-radius: 7px;    border-right: 3px solid #5c1713;}.d2 ul li:nth-child(3) {    content: '';    height: 60px;}.d2 ul li:nth-child(3)::before {    content: '';    position: absolute;    top: 59px;    left: 53px;    width: 9px;    height: 6px;    border-radius: 5px 5px 10px 10px;    background-color: #ffe31d;    border: 5px solid #5c1713;}.d2 ul li span {    position: absolute;    top: 21px;    left: 54px;    width: 18px;    height: 17px;    border-radius: 20px;}@keyframes swing {    0% {        transform: rotate(0);    }    25% {        transform: rotate(-13deg);    }    50% {        transform: rotate(0);    }    75% {        transform: rotate(13deg);    }    100% {        transform: rotate(0);    }}/* 灯笼 END */]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/rightmenu.css"/>
+      <url>/css/rightmenu.css</url>
+      
+        <content type="html"><![CDATA[/* rightMenu */#rightMenu{display: none;position: fixed;width: 160px;height: fit-content;top: 10%;left: 10%;background-color: var(--card-bg);border: 1px solid var(--font-color);border-radius: 8px;z-index: 100;}#rightMenu .rightMenu-group{padding: 7px 6px;}#rightMenu .rightMenu-group:not(:nth-last-child(1)){border-bottom: 1px solid var(--font-color);}#rightMenu .rightMenu-group.rightMenu-small{display: flex;justify-content: space-between;}#rightMenu .rightMenu-group .rightMenu-item{height: 30px;line-height: 30px;border-radius: 8px;transition: 0.3s;color: var(--font-color);}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item{display: flex;height: 40px;line-height: 40px;padding: 0 4px;}#rightMenu .rightMenu-group .rightMenu-item:hover{background-color: var(--text-bg-hover);}#rightMenu .rightMenu-group .rightMenu-item i{display: inline-block;text-align: center;line-height: 30px;width: 30px;height: 30px;padding: 0 5px;}#rightMenu .rightMenu-group .rightMenu-item span{line-height: 30px;}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item *{height: 40px;line-height: 40px;}.rightMenu-group.hide{display: none;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[ /* 页脚与头图透明 */ #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 白天模式遮罩透明 */ #footer::before {    background: transparent !important;  } #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 页脚与头图透明 */  #footer {    background: transparent !important;  } #page-header {    background: transparent !important;  }/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179, 71, 241) !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 *//* #aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 *//* [data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;} *//* 个人信息Follow me按钮 *//* #aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;} */#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before,#post .post-outdate-notice:before,.fontawesomeIcon,.note:not(.no-icon)::before,hr:before {    display: inline-block;    font-weight: 600;    font-style: normal;    font-variant: normal;    font-family: 'Font Awesome 5 Free';    text-rendering: auto;    -webkit-font-smoothing: antialiased}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {    position: absolute;    color: #f47466;    /* 回形针 */    content: '\f0c1';      line-height: 1;    -webkit-transition: all .2s ease-out;    -moz-transition: all .2s ease-out;    -o-transition: all .2s ease-out;    -ms-transition: all .2s ease-out;    transition: all .2s ease-out;    /* 若要使用风车效果，请去掉下面的注释 */    content: '\f863';     animation: avatar_turn_around 1s linear infinite;}#article-container h1 {    padding-left: 1.4rem}#article-container h1 code {    font-size: 1rem}#article-container h1:before {    margin-left: -1.3rem;    top: calc(50% - .5rem);    font-size: 1rem}#article-container h1:hover {    padding-left: 1.6rem}#article-container h2 {    padding-left: 1.3rem}#article-container h2 code {    font-size: .9rem}#article-container h2:before {    margin-left: -1.4rem;    top: calc(50% - .45rem);    font-size: .9rem}#article-container h2:hover {    padding-left: 1.5rem}#article-container h3 {    padding-left: 1.2rem}#article-container h3 code {    font-size: .8rem;    top: calc(50% - .4rem);}#article-container h3:before {    margin-left: -1.2rem;    top: calc(50% - .4rem);    font-size: .8rem}#article-container h3:hover {    padding-left: 1.4rem}#article-container h4 {    padding-left: 1.1rem}#article-container h4 code {    font-size: .7rem}#article-container h4:before {    margin-left: -1rem;    top: calc(50% - .35rem);    font-size: .7rem}#article-container h4:hover {    padding-left: 1.3rem}#article-container h5 {    padding-left: 1rem}#article-container h5 code {    font-size: .6rem}#article-container h5:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h5:hover {    padding-left: 1.2rem}#article-container h6 {    padding-left: 1rem}#article-container h6 code {    font-size: .6rem}#article-container h6:before {    margin-left: -.8rem;    top: calc(50% - .3rem);    font-size: .6rem}#article-container h6:hover {    padding-left: 1.2rem}/* 图标 */.iconfont {  font-family: "iconfont" !important;  font-size: 5em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
+      
+        <content type="html"><![CDATA[/* 运行时间 */div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/shubiao.css"/>
+      <url>/css/shubiao.css</url>
+      
+        <content type="html"><![CDATA[/* 鼠标样式 */#cursor {    position: fixed;    width: 16px;    height: 16px;    background: #000;    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;}#cursor.hidden {    opacity: 0;}#cursor.hover {    opacity: 0.1;    transform: scale(2.5);}#cursor.active {    opacity: 0.5;    transform: scale(0.5);}]]></content>
       
     </entry>
     
@@ -307,17 +318,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
-      
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
       
     </entry>
     
