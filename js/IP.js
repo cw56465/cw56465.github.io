@@ -34,7 +34,7 @@ function getDistance(e1, n1, e2, n2) {
 //根据需求自己定制
 function showWelcome() {
     
-    let dist = getDistance(120.57186, 31.29579, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //经纬度替换成自己的位置
+    let dist = getDistance(117.7490955,35.9194558, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //经纬度替换成自己的位置
 
     let pos = ipLoacation.result.ad_info.nation;
     let posdesc;

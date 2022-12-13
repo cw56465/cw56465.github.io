@@ -312,12 +312,12 @@ hr:before {
   }
 
   :root {
-    --ichika-emphasis-color: #F7F81A;
+    --Xeron-emphasis-color: #ffffff;
 }
 
 /* 公告&欢迎页 */
 .card-announcement {
-    background: linear-gradient(to top left, #8B00BB 0%, #030094 100%) !important;
+    background: linear-gradient(to top left, rgb(255, 255, 255) 0%, #ffffff 100%) !important;
     color:white;
     line-height:30px;
     font-size:16px;
@@ -330,5 +330,5 @@ hr:before {
 .card-announcement span{
     font-weight:bold;
     font-size:20px!important;
-    color:var(--ichika-emphasis-color);
+    color:var(--Xeron-emphasis-color);
 }
