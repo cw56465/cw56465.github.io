@@ -318,7 +318,7 @@ hr:before {
 
 /* 公告&欢迎页 */
 .card-announcement {
-    background: #ffffff 0% !important;
+    background: rgba(187, 255, 0, 0.276) !important;
     color:rgb(69, 124, 234);
     line-height:30px;
     font-size:16px;
