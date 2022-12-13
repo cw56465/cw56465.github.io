@@ -201,7 +201,7 @@ function showWelcome() {
     //自定义文本和需要放的位置
     document.getElementById("welcome-info").innerHTML =
         `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>
-你距离ichika约有<span>${dist}</span>公里，${posdesc}`;
+你距离Xeron约有<span>${dist}</span>公里，${posdesc}`;
 }
 
 window.onload = showWelcome;
