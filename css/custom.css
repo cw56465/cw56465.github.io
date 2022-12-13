@@ -312,13 +312,13 @@ hr:before {
   }
 
   :root {
-    --Xeron-emphasis-color: #ffffff;
+    --Xeron-emphasis-color: #50a9ed;
 }
 
 /* 公告&欢迎页 */
 .card-announcement {
     background: linear-gradient(to top left, rgb(255, 255, 255) 0%, #ffffff 100%) !important;
-    color:white;
+    color:rgb(69, 124, 234);
     line-height:30px;
     font-size:16px;
 }
