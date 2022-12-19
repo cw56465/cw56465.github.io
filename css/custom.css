@@ -150,7 +150,8 @@
   border-radius: 8px;
 } */
 
-#article-container h1:before,
+/* 风车 */
+/* #article-container h1:before,
 #article-container h2:before,
 #article-container h3:before,
 #article-container h4:before,
@@ -168,6 +169,7 @@ hr:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased
 }
+
 #article-container h1:before,
 #article-container h2:before,
 #article-container h3:before,
@@ -175,17 +177,17 @@ hr:before {
 #article-container h5:before,
 #article-container h6:before {
     position: absolute;
-    color: #f47466;
+    color: #f47466; */
     /* 回形针 */
-    content: '\f0c1';  
+    /* content: '\f0c1';  
     line-height: 1;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+    transition: all .2s ease-out; */
     /* 若要使用风车效果，请去掉下面的注释 */
-    content: '\f863'; 
+    /* content: '\f863'; 
     animation: avatar_turn_around 1s linear infinite;
 }
 #article-container h1 {
@@ -296,20 +298,20 @@ hr:before {
 
 #article-container h6:hover {
     padding-left: 1.2rem
-}
+} */
 
 
 /* 图标 */
 
 
-.iconfont {
+/* .iconfont {
   font-family: "iconfont" !important;
-  font-size: 5em;
+  font-size: 5em; */
   /* 可以定义图标大小 */
-  font-style: normal;
+  /* font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  }
+  } */
 
 
   :root {
