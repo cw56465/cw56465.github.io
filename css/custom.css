@@ -319,8 +319,6 @@ hr:before {
 }
 /* 公告&欢迎页 */
 .card-announcement {
-    background: rgba(93, 0, 255, 0.596) !important;
-    color:rgb(69, 124, 234);
     line-height:30px;
     font-size:16px;
 }
@@ -332,7 +330,6 @@ hr:before {
 .card-announcement span{
     font-weight:bold;
     font-size:20px!important;
-    color:var(--Xeron-emphasis-color);
 }
 
 

@@ -205,3 +205,4 @@ function showWelcome() {
 }
 
 window.onload = showWelcome;
+document.addEventListener('pjax:complete', showWelcome);
