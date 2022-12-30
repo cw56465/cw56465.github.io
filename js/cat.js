@@ -34,7 +34,7 @@ if (document.body.clientWidth > 992) {
                 borderRadius: 5 + 'px',
                 right: 60 + 'px',
                 nekoImg: "https://blog-imgs.rui4158.com/202212301122965.png",
-                hoverMsg: "回到顶部~",
+                hoverMsg: "喵喵喵~",
                 color: "#6f42c1",
                 during: 500,
                 blog_body: "body",
