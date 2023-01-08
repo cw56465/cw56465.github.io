@@ -92,6 +92,7 @@ rmf.copySelect = function () {
     document.execCommand('Copy', false, null);
 }
 
+
 //回到顶部
 rmf.scrollToTop = function () {
     document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
@@ -312,3 +313,4 @@ function changeMouseMode() {
         }, 300);
     }
 }
+
